@@ -10,12 +10,8 @@
     </mat-select>
   </mat-form-field>
 
-  <p>You selected: {{attackSkill}}</p>
-
-  <p>Slide Toggle using a simple NgModel.</p>
-  
+  <p>Re-rolls:</p>
   <section class="section">
-    <label>Color:</label>
     <mat-radio-group [(ngModel)]="reroll">
       <mat-radio-button value="none">
         None
@@ -28,28 +24,5 @@
       </mat-radio-button>
     </mat-radio-group>
   </section>
-  
-  <mat-slide-toggle [(ngModel)]="isChecked">Slide Toggle Checked: {{isChecked}}</mat-slide-toggle>
-  
-  <p>Slide Toggle inside of a Template-driven form</p>
-  
-  <form class="form" #form="ngForm" (ngSubmit)="onFormSubmit()" ngNativeValidate>
-  
-    <mat-slide-toggle ngModel name="enableWifi">Enable Wifi</mat-slide-toggle>
-    <mat-slide-toggle ngModel name="acceptTerms" required>Accept Terms of Service</mat-slide-toggle>
-  
-    <button mat-raised-button type="submit">Save Settings</button>
-  </form>
-  
-  <p>Slide Toggle inside of a Reactive form</p>
-  
-  <form class="form" [formGroup]="formGroup" (ngSubmit)="onFormSubmit()" ngNativeValidate>
-  
-    <mat-slide-toggle formControlName="enableWifi">Enable Wifi</mat-slide-toggle>
-    <mat-slide-toggle formControlName="acceptTerms">Accept Terms of Service</mat-slide-toggle>
-  
-    <p>Form Group Status: {{formGroup.status}}</p>
-  
-    <button mat-raised-button type="submit">Save Settings</button>
-  </form>
+  <mat-slide-toggle [(ngModel)]="rerollOne">One</mat-slide-toggle>
 </div>
