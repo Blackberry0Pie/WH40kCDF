@@ -1,15 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import {Component} from '@angular/core';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-attacker',
   templateUrl: './attacker.component.html',
   styleUrls: ['./attacker.component.scss']
 })
-export class AttackerComponent implements OnInit {
+export class AttackerComponent {
+isChecked = true;
+formGroup: FormGroup;
 
-  constructor() { }
-
-  ngOnInit(): void {
+constructor(formBuilder: FormBuilder) {
+    this.formGroup = formBuilder.group({
+      enableWifi: '',
+      acceptTerms: ['', Validators.requiredTrue]
+    });
   }
 
+  onFormSubmit() {
+    alert(JSON.stringify(this.formGroup.value, null, 2));
+  }
 }
