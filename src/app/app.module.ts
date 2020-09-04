@@ -8,12 +8,16 @@ import { AppComponent } from './app.component';
 import { MathhammerComponent } from './mathhammer/mathhammer.component';
 import { MaterialModule } from './material-module';
 import { GraphComponent } from './graph/graph.component';
+import { AttackerComponent } from './mathhammer/attacker/attacker.component';
+import { DefenderComponent } from './mathhammer/defender/defender.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MathhammerComponent,
-    GraphComponent
+    GraphComponent,
+    AttackerComponent,
+    DefenderComponent
   ],
   imports: [
     NgxChartsModule,
