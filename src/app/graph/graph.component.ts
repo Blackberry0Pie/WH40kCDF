@@ -23,8 +23,8 @@ export class GraphComponent implements OnInit {
   yAxis: boolean = true;
   showYAxisLabel: boolean = true;
   showXAxisLabel: boolean = true;
-  xAxisLabel: string = 'Year';
-  yAxisLabel: string = 'Population';
+  xAxisLabel: string = 'Minimum Wounds Dealt';
+  yAxisLabel: string = '% Probability of mimimum wounds dealt';
   timeline: boolean = true;
   customColors: object = [];
   colorScheme = {
@@ -50,34 +50,34 @@ export class GraphComponent implements OnInit {
     "series": [
       {
         "value": 3022,
-        "name": "2016-09-21T08:31:06.302Z"
+        "name": "0"
       },
       {
         "value": 2376,
-        "name": "2016-09-24T04:00:59.014Z"
+        "name": "1"
       },
       {
         "value": 3215,
-        "name": "2016-09-14T23:56:47.051Z"
+        "name": "2"
       },
       {
         "value": 3677,
-        "name": "2016-09-14T10:10:20.819Z"
+        "name": "3"
       },
       {
         "value": 2494,
-        "name": "2016-09-18T01:06:19.457Z"
+        "name": "4"
       },
       {
-        "name": "2016-09-20T22:06:15.331Z",
+        "name": "5",
         "value": 5325
       },
       {
-        "name": "2016-09-14T15:50:35.990Z",
+        "name": "6",
         "value": 5471
       },
       {
-        "name": "2016-09-15T12:32:17.562Z",
+        "name": "7",
         "value": 5887
       }
     ]
@@ -87,34 +87,34 @@ export class GraphComponent implements OnInit {
     "series": [
       {
         "value": 5658,
-        "name": "2016-09-21T08:31:06.302Z"
+        "name": "0"
       },
       {
         "value": 6246,
-        "name": "2016-09-24T04:00:59.014Z"
+        "name": "1"
       },
       {
         "value": 2693,
-        "name": "2016-09-14T23:56:47.051Z"
+        "name": "2"
       },
       {
         "value": 3326,
-        "name": "2016-09-14T10:10:20.819Z"
+        "name": "3"
       },
       {
         "value": 4959,
-        "name": "2016-09-18T01:06:19.457Z"
+        "name": "4"
       },
       {
-        "name": "2016-09-20T22:06:15.331Z",
+        "name": "5",
         "value": 6702
       },
       {
-        "name": "2016-09-14T15:50:35.990Z",
+        "name": "6",
         "value": 6371
       },
       {
-        "name": "2016-09-15T12:32:17.562Z",
+        "name": "7",
         "value": 2673
       }
     ]
@@ -124,34 +124,34 @@ export class GraphComponent implements OnInit {
     "series": [
       {
         "value": 3618,
-        "name": "2016-09-21T08:31:06.302Z"
+        "name": "0"
       },
       {
         "value": 6447,
-        "name": "2016-09-24T04:00:59.014Z"
+        "name": "1"
       },
       {
         "value": 5114,
-        "name": "2016-09-14T23:56:47.051Z"
+        "name": "2"
       },
       {
         "value": 6849,
-        "name": "2016-09-14T10:10:20.819Z"
+        "name": "3"
       },
       {
         "value": 3472,
-        "name": "2016-09-18T01:06:19.457Z"
+        "name": "4"
       },
       {
-        "name": "2016-09-20T22:06:15.331Z",
+        "name": "5",
         "value": 3946
       },
       {
-        "name": "2016-09-14T15:50:35.990Z",
+        "name": "6",
         "value": 2099
       },
       {
-        "name": "2016-09-15T12:32:17.562Z",
+        "name": "7",
         "value": 3300
       }
     ]
@@ -161,34 +161,34 @@ export class GraphComponent implements OnInit {
     "series": [
       {
         "value": 5579,
-        "name": "2016-09-21T08:31:06.302Z"
+        "name": "0"
       },
       {
         "value": 5075,
-        "name": "2016-09-24T04:00:59.014Z"
+        "name": "1"
       },
       {
         "value": 4180,
-        "name": "2016-09-14T23:56:47.051Z"
+        "name": "2"
       },
       {
         "value": 3471,
-        "name": "2016-09-14T10:10:20.819Z"
+        "name": "3"
       },
       {
         "value": 5736,
-        "name": "2016-09-18T01:06:19.457Z"
+        "name": "4"
       },
       {
-        "name": "2016-09-20T22:06:15.331Z",
+        "name": "5",
         "value": 4136
       },
       {
-        "name": "2016-09-14T15:50:35.990Z",
+        "name": "6",
         "value": 5046
       },
       {
-        "name": "2016-09-15T12:32:17.562Z",
+        "name": "7",
         "value": 6967
       }
     ]
@@ -198,34 +198,34 @@ export class GraphComponent implements OnInit {
     "series": [
       {
         "value": 2851,
-        "name": "2016-09-21T08:31:06.302Z"
+        "name": "0"
       },
       {
         "value": 2663,
-        "name": "2016-09-24T04:00:59.014Z"
+        "name": "1"
       },
       {
         "value": 3043,
-        "name": "2016-09-14T23:56:47.051Z"
+        "name": "2"
       },
       {
         "value": 4376,
-        "name": "2016-09-14T10:10:20.819Z"
+        "name": "3"
       },
       {
         "value": 4237,
-        "name": "2016-09-18T01:06:19.457Z"
+        "name": "4"
       },
       {
-        "name": "2016-09-20T22:06:15.331Z",
+        "name": "5",
         "value": 3783
       },
       {
-        "name": "2016-09-14T15:50:35.990Z",
+        "name": "6",
         "value": 5185
       },
       {
-        "name": "2016-09-15T12:32:17.562Z",
+        "name": "7",
         "value": 2322
       }
     ]
@@ -235,34 +235,34 @@ export class GraphComponent implements OnInit {
     "series": [
       {
         "value": 3722,
-        "name": "2016-09-21T08:31:06.302Z"
+        "name": "0"
       },
       {
         "value": 1245,
-        "name": "2016-09-24T04:00:59.014Z"
+        "name": "1"
       },
       {
         "value": 3625,
-        "name": "2016-09-14T23:56:47.051Z"
+        "name": "2"
       },
       {
         "value": 5246,
-        "name": "2016-09-14T10:10:20.819Z"
+        "name": "3"
       },
       {
         "value": 4352,
-        "name": "2016-09-18T01:06:19.457Z"
+        "name": "4"
       },
       {
-        "name": "2016-09-20T22:06:15.331Z",
+        "name": "5",
         "value": 1246
       },
       {
-        "name": "2016-09-14T15:50:35.990Z",
+        "name": "6",
         "value": 1356
       },
       {
-        "name": "2016-09-15T12:32:17.562Z",
+        "name": "7",
         "value": 1838
       }
     ]
@@ -272,34 +272,34 @@ export class GraphComponent implements OnInit {
     "series": [
       {
         "value": 1356,
-        "name": "2016-09-21T08:31:06.302Z"
+        "name": "0"
       },
       {
         "value": 5232,
-        "name": "2016-09-24T04:00:59.014Z"
+        "name": "1"
       },
       {
         "value": 1563,
-        "name": "2016-09-14T23:56:47.051Z"
+        "name": "2"
       },
       {
         "value": 503,
-        "name": "2016-09-14T10:10:20.819Z"
+        "name": "3"
       },
       {
         "value": 3456,
-        "name": "2016-09-18T01:06:19.457Z"
+        "name": "4"
       },
       {
-        "name": "2016-09-20T22:06:15.331Z",
+        "name": "5",
         "value": 1345
       },
       {
-        "name": "2016-09-14T15:50:35.990Z",
+        "name": "6",
         "value": 4567
       },
       {
-        "name": "2016-09-15T12:32:17.562Z",
+        "name": "7",
         "value": 2467
       }
     ]
@@ -309,37 +309,37 @@ export class GraphComponent implements OnInit {
     "series": [
       {
         "value": 4563,
-        "name": "2016-09-21T08:31:06.302Z"
+        "name": "0"
       },
       {
         "value": 5535,
-        "name": "2016-09-24T04:00:59.014Z"
+        "name": "1"
       },
       {
         "value": 6345,
-        "name": "2016-09-14T23:56:47.051Z"
+        "name": "2"
       },
       {
         "value": 6399,
-        "name": "2016-09-14T10:10:20.819Z"
+        "name": "3"
       },
       {
         "value": 5243,
-        "name": "2016-09-18T01:06:19.457Z"
+        "name": "4"
       },
       {
-        "name": "2016-09-20T22:06:15.331Z",
+        "name": "5",
         "value": 4656
       },
       {
-        "name": "2016-09-14T15:50:35.990Z",
+        "name": "6",
         "value": 5234
       },
       {
-        "name": "2016-09-15T12:32:17.562Z",
+        "name": "7",
         "value": 1546
       }
     ]
   }
-]
+  ]
 }
