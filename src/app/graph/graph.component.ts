@@ -24,7 +24,7 @@ export class GraphComponent implements OnInit {
   showYAxisLabel: boolean = true;
   showXAxisLabel: boolean = true;
   xAxisLabel: string = 'Minimum Wounds Dealt';
-  yAxisLabel: string = '% Probability of mimimum wounds dealt';
+  yAxisLabel: string = '% Prob. of min. wounds dealt';
   timeline: boolean = true;
   customColors: object = [];
   colorScheme = {
