@@ -7,10 +7,12 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
   styleUrls: ['./attacker.component.scss']
 })
 export class AttackerComponent {
-isChecked = true;
-formGroup: FormGroup;
+  attackSkill = '4+';
+  reroll = 'none';
+  isChecked = true;
+  formGroup: FormGroup;
 
-constructor(formBuilder: FormBuilder) {
+  constructor(formBuilder: FormBuilder) {
     this.formGroup = formBuilder.group({
       enableWifi: '',
       acceptTerms: ['', Validators.requiredTrue]

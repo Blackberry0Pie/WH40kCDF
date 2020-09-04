@@ -1,25 +1,55 @@
-<p>Slide Toggle using a simple NgModel.</p>
+<div class="sidenav">
+  <mat-form-field appearance="fill">
+    <mat-label>BS/WS</mat-label>
+    <mat-select [(value)]="attackSkill">
+      <mat-option value="2+">2+</mat-option>
+      <mat-option value="3+">3+</mat-option>
+      <mat-option value="4+">4+</mat-option>
+      <mat-option value="5+">5+</mat-option>
+      <mat-option value="6+">6+</mat-option>
+    </mat-select>
+  </mat-form-field>
 
-<mat-slide-toggle [(ngModel)]="isChecked">Slide Toggle Checked: {{isChecked}}</mat-slide-toggle>
+  <p>You selected: {{attackSkill}}</p>
 
-<p>Slide Toggle inside of a Template-driven form</p>
-
-<form class="example-form" #form="ngForm" (ngSubmit)="onFormSubmit()" ngNativeValidate>
-
-  <mat-slide-toggle ngModel name="enableWifi">Enable Wifi</mat-slide-toggle>
-  <mat-slide-toggle ngModel name="acceptTerms" required>Accept Terms of Service</mat-slide-toggle>
-
-  <button mat-raised-button type="submit">Save Settings</button>
-</form>
-
-<p>Slide Toggle inside of a Reactive form</p>
-
-<form class="example-form" [formGroup]="formGroup" (ngSubmit)="onFormSubmit()" ngNativeValidate>
-
-  <mat-slide-toggle formControlName="enableWifi">Enable Wifi</mat-slide-toggle>
-  <mat-slide-toggle formControlName="acceptTerms">Accept Terms of Service</mat-slide-toggle>
-
-  <p>Form Group Status: {{formGroup.status}}</p>
-
-  <button mat-raised-button type="submit">Save Settings</button>
-</form>
+  <p>Slide Toggle using a simple NgModel.</p>
+  
+  <section class="section">
+    <label>Color:</label>
+    <mat-radio-group [(ngModel)]="reroll">
+      <mat-radio-button value="none">
+        None
+      </mat-radio-button>
+      <mat-radio-button value="ones">
+        Ones
+      </mat-radio-button>
+      <mat-radio-button value="all">
+        All
+      </mat-radio-button>
+    </mat-radio-group>
+  </section>
+  
+  <mat-slide-toggle [(ngModel)]="isChecked">Slide Toggle Checked: {{isChecked}}</mat-slide-toggle>
+  
+  <p>Slide Toggle inside of a Template-driven form</p>
+  
+  <form class="form" #form="ngForm" (ngSubmit)="onFormSubmit()" ngNativeValidate>
+  
+    <mat-slide-toggle ngModel name="enableWifi">Enable Wifi</mat-slide-toggle>
+    <mat-slide-toggle ngModel name="acceptTerms" required>Accept Terms of Service</mat-slide-toggle>
+  
+    <button mat-raised-button type="submit">Save Settings</button>
+  </form>
+  
+  <p>Slide Toggle inside of a Reactive form</p>
+  
+  <form class="form" [formGroup]="formGroup" (ngSubmit)="onFormSubmit()" ngNativeValidate>
+  
+    <mat-slide-toggle formControlName="enableWifi">Enable Wifi</mat-slide-toggle>
+    <mat-slide-toggle formControlName="acceptTerms">Accept Terms of Service</mat-slide-toggle>
+  
+    <p>Form Group Status: {{formGroup.status}}</p>
+  
+    <button mat-raised-button type="submit">Save Settings</button>
+  </form>
+</div>
