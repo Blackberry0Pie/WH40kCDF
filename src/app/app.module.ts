@@ -6,7 +6,7 @@ import { NgxChartsModule }from '@swimlane/ngx-charts';
 
 import { AppComponent } from './app.component';
 import { MathhammerComponent } from './mathhammer/mathhammer.component';
-import {MaterialModule} from './material-module';
+import { MaterialModule } from './material-module';
 import { GraphComponent } from './graph/graph.component';
 
 @NgModule({
