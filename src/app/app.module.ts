@@ -3,11 +3,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { MathhammerComponent } from './mathhammer/mathhammer.component';
 import {MaterialModule} from './material-module';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MathhammerComponent
   ],
   imports: [
     MaterialModule,

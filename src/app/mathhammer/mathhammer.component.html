@@ -1,0 +1,44 @@
+<div class="container" [class.is-mobile]="mobileQuery.matches">
+  <mat-toolbar color="primary" class="toolbar">
+    <div class="flex-container">
+      <div>
+        <button mat-icon-button (click)="left.toggle()"><mat-icon>menu</mat-icon></button>
+        <span>Attacker</span>
+      </div>
+      <div>
+        <button mat-icon-button matTooltip="Link" aria-label="Link to this page"><mat-icon>link</mat-icon></button>
+        <button mat-icon-button matTooltip="Home" aria-label="Go to site home"><mat-icon>home</mat-icon></button>
+        <button mat-icon-button matTooltip="Save image" aria-label="Save chart image"><mat-icon>photo</mat-icon></button>
+      </div>
+      <div>
+        <span>Defender</span>
+        <button mat-icon-button (click)="right.toggle()"><mat-icon>menu</mat-icon></button>
+      </div>
+    </div>
+  </mat-toolbar>
+
+  <mat-sidenav-container class="sidenav-container"
+                         [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+    <mat-sidenav #left position="start"
+                 [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+      <mat-nav-list>
+        <a mat-list-item routerLink="." *ngFor="let nav of fillerNav">{{nav}}</a>
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav #right position="end"
+                 [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+      <mat-nav-list>
+        <a mat-list-item routerLink="." *ngFor="let nav of fillerNav">{{nav}}</a>
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <p *ngFor="let content of fillerContent">{{content}}</p>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+
+<!-- Copyright 2020 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->

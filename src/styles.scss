@@ -2,3 +2,22 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.basic-container {
+  padding: 30px;
+}
+.version-info {
+  font-size: 8pt;
+  float: right;
+  margin: 8px;
+}
+.mat-drawer-container{
+  color: white;
+  background-color: black;
+}
+.mat-drawer-backdrop.mat-drawer-shown{
+  background-color: rgba(50,50,50,.8);
+}
+.mat-list-base .mat-list-item{
+  background-color: black;
+}
+
