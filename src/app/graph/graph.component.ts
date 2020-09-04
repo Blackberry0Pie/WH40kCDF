@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { GoogleChartsModule } from 'angular-google-charts';
 
 @Component({
   selector: 'app-graph',
