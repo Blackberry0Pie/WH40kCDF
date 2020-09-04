@@ -22,14 +22,14 @@
     <mat-sidenav #left position="start"
                  [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
       <mat-nav-list>
-        <a mat-list-item routerLink="." *ngFor="let nav of fillerNav">{{nav}}</a>
+        <app-attacker></app-attacker>
       </mat-nav-list>
     </mat-sidenav>
 
     <mat-sidenav #right position="end"
                  [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
       <mat-nav-list>
-        <a mat-list-item routerLink="." *ngFor="let nav of fillerNav">{{nav}}</a>
+        <app-defender></app-defender>
       </mat-nav-list>
     </mat-sidenav>
 
