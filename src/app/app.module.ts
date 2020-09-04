@@ -3,6 +3,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 import { GoogleChartsModule } from 'angular-google-charts';
+import { NgxChartsModule }from '@swimlane/ngx-charts';
 
 import { AppComponent } from './app.component';
 import { MathhammerComponent } from './mathhammer/mathhammer.component';
@@ -17,6 +18,7 @@ import { GraphComponent } from './graph/graph.component';
   ],
   imports: [
     GoogleChartsModule,
+    NgxChartsModule,
     MaterialModule,
     BrowserModule,
     BrowserAnimationsModule
