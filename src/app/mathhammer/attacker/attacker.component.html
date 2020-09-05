@@ -10,7 +10,7 @@
     </mat-select>
   </mat-form-field>
 
-  <p>Re-rolls:</p>
+  <p>To-hit re-rolls:</p>
   <section class="section">
     <mat-radio-group [(ngModel)]="reroll">
       <mat-radio-button value="none">
@@ -27,30 +27,71 @@
   <mat-slide-toggle [(ngModel)]="rerollOne">One</mat-slide-toggle>
   <br/>
   <p>Weapons:</p>
-  <mat-tab-group animationDuration="0ms">
-    <mat-tab label="1">
-      Content 1
-    </mat-tab>
-    <mat-tab label="2">
-      Content 2
-    </mat-tab>
-    <mat-tab label="3">
-      Content 3
-    </mat-tab>
-    <mat-tab label="4">
-      Content 4
-    </mat-tab>
-    <mat-tab label="5">
-      Content 5
-    </mat-tab>
-    <mat-tab label="6">
-      Content 6
-    </mat-tab>
-    <mat-tab label="7">
-      Content 7
-    </mat-tab>
-    <mat-tab label="8">
-      Content 8
+  <mat-tab-group animationDuration="0ms"
+                 [selectedIndex]="selected.value"
+                 (selectedIndexChange)="selected.setValue($event)">
+    <mat-tab *ngFor="let tab of tabs; let index = index" [label]="tab">
+      <br/>
+      <mat-form-field class="full-width">
+        <mat-label>Name</mat-label>
+        <input matInput [(value)]="name"
+               type="text"
+               placeholder="Bolt Gun"
+               maxlength="25"
+               autocomplete="off"
+        />
+      </mat-form-field>
+      <br/>
+      <mat-form-field class="full-width">
+        <mat-label>Attacks</mat-label>
+        <input matInput [(value)]="attacks"
+               type="text"
+               placeholder="##"
+               maxlength="2"
+               inputmode="numeric"
+               pattern="[0-9]*"
+               autocomplete="off"
+               digitOnly
+        />
+      </mat-form-field>
+      <br/>
+      <mat-form-field class="full-width">
+        <mat-label>Strength</mat-label>
+        <input matInput [(value)]="strength"
+               type="text"
+               placeholder="##"
+               maxlength="2"
+               inputmode="numeric"
+               pattern="[0-9]*"
+               autocomplete="off"
+               digitOnly
+        />
+      </mat-form-field>
+      <br/>
+      <mat-form-field class="full-width">
+        <mat-label>Armour Penetration</mat-label>
+        <input matInput [(value)]="AP"
+               type="text"
+               placeholder="#"
+               maxlength="1"
+               inputmode="numeric"
+               pattern="[0-8]*"
+               autocomplete="off"
+               digitOnly
+        />
+      </mat-form-field>
+      <br/>
+      <mat-form-field class="full-width">
+        <mat-label>Damage</mat-label>
+        <input matInput [(value)]="damage"
+               type="text"
+               placeholder="##D#"
+               maxlength="4"
+               pattern="[0-9dD]*"
+               autocomplete="off"
+        />
+      </mat-form-field>
+      <br/>
     </mat-tab>
   </mat-tab-group>
 </div>
