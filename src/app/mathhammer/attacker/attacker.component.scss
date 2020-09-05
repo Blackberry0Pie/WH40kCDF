@@ -13,6 +13,7 @@
 
 .mat-form-field {
   width: 100%;
+  margin-bottom: 0px;
 }
 
 .mat-radio-button {
@@ -25,6 +26,12 @@
   align-content: center;
   margin-left: 8px;
   margin-right: 8px;
+}
+
+::ng-deep.mat-tab-label, ::ng-deep.mat-tab-label-active{
+ min-width: 26px!important;
+ padding: 3px!important;
+ margin: 3px!important;
 }
 
 .sidenav {
@@ -40,4 +47,9 @@
 
 .full-width {
   width: 100%;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
