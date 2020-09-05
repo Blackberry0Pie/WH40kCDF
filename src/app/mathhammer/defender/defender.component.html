@@ -1,12 +1,28 @@
 <div class="sidenav">
   <mat-form-field class="full-width">
     <mat-label>Toughness</mat-label>
-    <input matInput [(value)]="toughness">
+    <input matInput [(value)]="toughness"
+      type="text"
+      placeholder="##"
+      maxlength="2"
+      inputmode="numeric"
+      pattern="[0-9]*"
+      autocomplete="off"
+      digitOnly
+    />
   </mat-form-field>
   <br/>
   <mat-form-field class="full-width">
     <mat-label>Wounds</mat-label>
-    <input matInput [(value)]="wounds">
+    <input matInput [(value)]="wounds"
+           type="text"
+           placeholder="##"
+           maxlength="2"
+           inputmode="numeric"
+           pattern="[0-9]*"
+           autocomplete="off"
+           digitOnly
+    />
   </mat-form-field>
   <br/>
   <mat-form-field appearance="fill">

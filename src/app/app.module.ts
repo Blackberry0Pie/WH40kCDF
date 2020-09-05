@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { NgxChartsModule }from '@swimlane/ngx-charts';
+import { DigitOnlyModule } from '@uiowa/digit-only';
 
 import { AppComponent } from './app.component';
 import { MathhammerComponent } from './mathhammer/mathhammer.component';
@@ -21,6 +22,7 @@ import { DefenderComponent } from './mathhammer/defender/defender.component';
     DefenderComponent
   ],
   imports: [
+    DigitOnlyModule,
     FormsModule,
     NgxChartsModule,
     MaterialModule,

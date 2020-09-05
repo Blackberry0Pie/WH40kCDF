@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./defender.component.scss']
 })
 export class DefenderComponent {
-  toughness = '4';
-  wounds = '1';
+  toughness = 4;
+  wounds = 1;
   armourSave = '3+';
   invulnSave = '-';
   FNPsave = '-';
